@@ -94,7 +94,7 @@ function getFormInfo(event) {
 }
 
 function showStudentId(){ // function to display student id
-    myStudentId.innerHTML = "1261276";
+    myStudentId.innerHTML = "1261276 Emma Sauve";
 }
 
 form.addEventListener("submit", getFormInfo);
