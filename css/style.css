@@ -1,0 +1,46 @@
+html{
+    background: linear-gradient(#ffffff, #3a9ddf);
+}
+
+h3, h4, h5, h6{
+    font-family: "Caveat", cursive;
+    letter-spacing: 2px;
+    color:#113976;
+}
+
+.form h2{
+    font-family: "Caveat", cursive;
+    letter-spacing: 2px;
+    color:#113976;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #3a9ddf;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Caveat", cursive;
+    letter-spacing: 2px;
+}
+
+.headerMain{
+    font-size: 1.5em;
+}
+
+.form{
+    border: solid 3px #3a9ddf;
+    text-align: center;
+    line-height: 2;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: aliceblue;
+}
+
+p, label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#113976;
+}
+

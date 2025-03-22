@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Order Pizza Online | Seaside Slices</title> 
+        <meta name="description" content="Assignment 3">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" href="css/style.css" type="text/css"> <!-- link to the css -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="./js/script.js" defer></script> <!-- link to the js-->
+	</head> 
+
+    <body> 
+
+        <header> 
+
+            <div class="headerMain">
+                <h1>Seaside Slices</h1> <!-- header for the name of the pizza place (seaside slices) -->
+            </div>
+
+            <div class="headerSection">
+                <h2 >fishy@order.com</h2> 
+                <h2>222-222-2222</h2>  
+            </div>
+
+        </header>
+
+
+
+        <main> 
+        
+            <form id="seasideForm">
+                <input type="hidden" name="form_sent" value="1">
+                <section class="form"><!-- form to create your own pizza -->
+                    <input type="hidden" name="form_sent" value="1">
+                    <h2>Create your own pizza :</h2> 
+
+                        <div> <!-- selecting the amount of pizzas -->
+                            <label for="numberOfPizza" >Number of pizzas :</label> 
+                            <input type="number" name="numberOfPizza" id="numberOfPizza" >
+                        </div>
+
+                        <div class="size"> <!-- drop down menu for the size-->
+                            <label for="size">Size :</label>
+                            <select name="size" id="size" >
+                                <option>Small (6 slices)</option>
+                                <option>Medium (8 Slices)</option>
+                                <option>Large (14 Slices)</option>
+                                <option>Extra-large (18 Slices)</option>
+                                <option>Ocean-sized (24 Slices)</option>
+                            </select>
+                        </div>
+
+                        <div> <!-- drop down menu for crust type -->
+                            <label for="crust">Crust :</label>
+                            <select name="crust" id="crust" >
+                                <option>Regular</option>
+                                <option>Thin crust</option>
+                                <option>Fish stuffed crust (Special)</option>
+                                <option>Deep dish</option>
+                            </select>
+                        </div>
+
+                   
+                        <div class="toppings"> <!-- checkboxes for topping selection -->
+                             <h3>Toppings :</h3>
+                                <!-- choose toppings-->
+                                <input type="checkbox" name="topping[]" id="topping1" value="anchovy" >
+                                <label for="topping1">Anchovies</label>
+
+                                <input type="checkbox" name="topping[]" id="topping2" value="salmon" >
+                                <label for="topping2">Salmon</label>
+
+                                <input type="checkbox" name="topping[]" id="topping3" value="shrimp" >
+                                <label for="topping3">Shrimp</label>
+
+                                <input type="checkbox" name="topping[]" id="topping4" value="lobster" >
+                                <label for="topping4">Lobster</label>
+
+                                <input type="checkbox" name="topping[]" id="topping5" value="tuna" >
+                                <label for="topping5">Tuna</label>
+
+                                <input type="checkbox" name="topping[]" id="topping6" value="sardine" >
+                                <label for="topping6">Sardines</label>
+
+                                <input type="checkbox" name="topping[]" id="topping7" value="seaweed" >
+                                <label for="topping7">Seaweed</label>
+
+                                <input type="checkbox" name="topping[]" id="topping8" value="caviar" >
+                                <label for="topping7">Caviar</label>
+                        </div>
+
+                        <div> <!-- drop down menu for sauce type -->
+                            <label for="sauce">Pizza Sauce :</label>
+                            <select name="sauce" id="sauce" >
+                                <option>Classic marinara</option>
+                                <option>Alfredo</option>
+                                <option>Garlic butter</option>
+                                <option>Pesto</option>
+                                <option>Sea water</option>
+                                <option>Chocolate Sauce</option>
+                                <option>No Sauce</option>
+                            </select>
+                        </div>
+        
+                        <div> <!-- checkboxes for cheese selection -->
+                            <h3>Cheese :</h3>
+                                <!-- choose cheeses-->
+                                <input type="checkbox" name="cheese[]" id="cheese1" value="Mozzarella" >
+                                <label for="cheese1">Mozzarella</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese2" value="Cheddar" >
+                                <label for="cheese2">Cheddar</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese3" value="Parmesan" >
+                                <label for="cheese3">Parmesan</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese4" value="Goat cheese" >
+                                <label for="cheese4">Goat cheese</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese5" value="Feta" >
+                                <label for="cheese5">Feta</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese6" value="Blue cheese" >
+                                <label for="cheese6">Blue cheese</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese7" value="Anchovy flavoured cheese" >
+                                <label for="cheese7">Anchovy flavoured cheese (new)</label>
+
+                                <input type="checkbox" name="cheese[]" id="cheese8" value="Vegan" >
+                                <label for="cheese8">Vegan</label>
+                        </div>
+                      
+                        <div> <!-- checkboxes for seasoning selection -->
+                            <h3>Additional Seasonings :</h3>
+                                <!-- choose seasonings -->
+                                <input type="checkbox" name="seasoning[]" id="seasoning1" value="Fresh basil" >
+                                <label for="seasoning1">Fresh basil</label>
+
+                                <input type="checkbox" name="seasoning[]" id="seasoning2" value="Oregano" >
+                                <label for="seasoning2">Oregano</label>
+
+                                <input type="checkbox" name="seasoning[]" id="seasoning3" value="Crushed red pepper flakes" >
+                                <label for="seasoning3">Crushed red pepper flakes</label>
+
+                                <input type="checkbox" name="seasoning[]" id="seasoning4" value="Fish flakes" >
+                                <label for="seasoning4">Fish flakes</label>
+
+                                <input type="checkbox" name="seasoning[]" id="seasoning5" value="Cilantro" >
+                                <label for="seasoning5">Cilantro</label>
+
+                                <input type="checkbox" name="seasoning[]" id="seasoning" value="Sea salt" >
+                                <label for="seasoning6">Sea salt</label>
+
+                                <input type="checkbox" name="seasoning[]" id="seasoning7" value="Rosemary" >
+                                <label for="seasoning7">Rosemary</label>
+                        </div>
+
+                        <h2>Order Information</h2>
+
+                        <div>
+                            <label for="fName" >First Name :</label> <!-- input first name -->
+                             <input type="text" name="fName"
+                             id="fName" size="25" maxLength="50"
+                              />
+                        </div>
+                        <div>
+                            <label for="lName" >Last Name :</label> <!-- input last name -->
+                            <input type="text" name="lName"
+                            id="lName" size="25" maxLength="50"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="address" >Address :</label> <!-- input the adress-->
+                            <input id="address" type="text" name="address" />
+                        </div>
+
+                        <div>
+                            <label for="phoneNumber" >Phone number :</label> <!-- input the phone number-->
+                            <input id="phoneNumber" type="phone" name="phoneNumber" />
+                        </div>
+
+                        <div>
+                            <label for="delivery">Delivery options :</label> <!-- options for in canada delivery and internqational delivery -->
+                            <select name="delivery" id="delivery" >
+                                <option value="Delivery in Canada">Delivery in Canada</option>
+                                <option value="International shipping">International shipping</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <button type="reset">Reset</button> <!-- buttons to reset the form or submit the form -->
+                            <button type="submit">Order</button>
+                        </div> 
+                 </section>
+            </form>
+            <section>
+                <div>
+                    <p id="orderInfo"></p> <!-- paragraph for the javascript output-->
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        <p>©SeasideSlices.com All rights reserved</p> 
+        <div>
+            <p id="myStudentId"></p> <!-- paragraph to display student id -->
+        </div>
+    </footer>
+
+    </body> 
+  </html>  
